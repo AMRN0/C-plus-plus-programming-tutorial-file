@@ -103,4 +103,51 @@ void print_pow(double a, int b)
     std::cout << pow(a, b) << std::endl;
     std::cout << power(a, b) << std::endl;
 
+
+    //escape sequences
+    /*
+    \t is a tab space
+    usage: std::cout << "this is\t text" << std::endl; would give: this is   text
+    \n is used for new line.
+    \b used to delete a character places before it. basically a backspace.
+    \v is vertical tab. so a new line with a tab space.
+    usage: std::cout << "this is\v text" << std::endl; would give:
+    this is
+         text
+    \a might not work in a regular console but it gives out a beep sound.
+    \0 used to declare the end of a native style c string. basically strings that existed in C but also exist in c++
+    "Hello \" There \" " is used to tell the compiler that the double quite inside the quote is not the end of itself, but its the start of an inside
+    quote. it will print: Hello "There".
+    \\ to interpret an actual backslash into your string.
+    there are more but these are the most common ones.
+    */
+
+
+    //Bool data type
+    /*
+    bool is boolean.
+    true or false.
+    it will output 0 or 1 tho. 0 for false and 1 for true.
+    can write 0/1 instead of true/false.
+
+    making the console say true/false instead of 0/1:
+    when printing use: std::cout << std::boolalpha variable << std::endl;
+    the boolalpha and the endl are maniupulators. they manipulate data.
+    */
+
+
+    //floating points.
+    /*
+    float - trust 6 digits
+    double - trust 15 digits
+    long double - trust 18 digits
+    there is a float.h file that exists in a library that we can use.
+    FLT_DIG for float digits.
+    DBL_DIG for double digits.
+    LDBL_DIG for long double digits.
+
+    if dealing with money use a library with exact presition. you can trust every digit in it.
+    */
+    
+
 }

@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream> //importing a library external to the main program folder. use "" to import an internal one. input output stream.
 #include <cmath> //including mathematical functions into c++ like the power function.
+#include <float.h>
 
 std::string hi; //declaring a variable called "hi".
 int slices;
