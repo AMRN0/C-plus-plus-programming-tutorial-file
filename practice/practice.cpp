@@ -103,6 +103,8 @@ void print_pow(double a, int b)
     std::cout << pow(a, b) << std::endl;
     std::cout << power(a, b) << std::endl;
 
+}
+
 
     //escape sequences
     /*
@@ -123,6 +125,9 @@ void print_pow(double a, int b)
     */
 
 
+
+
+
     //Bool data type
     /*
     bool is boolean.
@@ -134,6 +139,8 @@ void print_pow(double a, int b)
     when printing use: std::cout << std::boolalpha variable << std::endl;
     the boolalpha and the endl are maniupulators. they manipulate data.
     */
+
+
 
 
     //floating points.
@@ -148,6 +155,76 @@ void print_pow(double a, int b)
 
     if dealing with money use a library with exact presition. you can trust every digit in it.
     */
-    
 
-}
+
+
+
+
+    //Different Constants
+    /*
+    #define X 10 //macro constant
+    cosnt int x = 5; //regular constant
+    enum { y =100} //enum constant
+
+    cannot change these constants ever again.
+    */
+
+    //Numeric Functions
+    /*
+    #include <cmath>
+    sqrt(25) //gives output of 5
+
+    if the number in the sqrt() is a negative, it gives "nan" which is "not a number".
+    if the number in pow() is large enough it will give hte result "inf" which is "infinity". if negative number it will be "-inf".
+
+    remainder() can give a floating point value. unlike the mod(%) operator.
+    fmod() is similar with some differences but its mostly the same. rounding vs truncation.
+
+    fmax() get the max value from the defined parameters.
+    fmin() get the min value fron the defined parameters.
+
+    ceil() gives the ceiling value, so if the number is 3.25 the ceiling will be 4.
+    floor() gives the bottom value, so if the number is 3.25, the floor will be 3.
+    trunc() does the same thing as floor() but its truncation so it removes the decimal numbers no matter 
+    how close to the next number they are.
+    round() rounds the number to the closest value.
+
+
+    More Functions but the list is too bit. like way too big.
+    */
+
+
+
+
+    //using string
+    /*
+    #include <string>
+
+    std::string greeting = "hello";
+    std::cout:: greeting[0] << std::endl;
+    ^^this will output H as its the first (0) value of the word.
+
+    using the + sign is called a concatination.
+    std::string greeting + " there" << std::endl;
+
+    string is a class, so it has functions inside it such as string.length();
+
+    char name[] = "abcdefg"; //this is an array of characters. so name[0] is "a" and so on.
+
+    MAIN STRING INFORMATION FOR STRING INPUT
+    std::cin >> greeting;
+    std::cout << greeting << std::endl;
+
+    if input is "Hello there!" the only wword that would be out putted is "Hello".
+
+    using getline(std::cin, string_name) will get the full line.
+
+    use cin.getline() if you'r etrying to get numbers.
+
+
+
+
+
+    //string modifier functions.
+    string.length() and string.size() are the same thing.
+    */
